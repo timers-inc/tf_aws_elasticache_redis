@@ -58,6 +58,12 @@ variable "subnets" {
   description = "List of VPC Subnet IDs for the cache subnet group"
 }
 
+variable "tags" {
+  type = "map"
+  default     = {}
+  description = "A map of tags to add to all resources"
+}
+
 # might want a map
 variable "redis_version" {
   description = "Redis version to use, defaults to 3.2.4"
